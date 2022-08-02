@@ -1,24 +1,28 @@
 #큰수 반복
 n, m, k= map(int,input().split())
-# int(m)
-# int(k)
-# m = 8
-# k = 3
+#n 숫자 리스트 길이, m 최대 반복횟수, k 동일 숫자 최대반복 횟수
+
 numlist = list(map(int,input().split()))
-# numlist = [2,4,5,4,6]
+
 hap = 0
 sumcount = 0
+#동일 숫자 반복체크
 count = 0
+#전체 반복 체크
+
 sortednum = sorted(numlist,reverse=True)
 
 while count != m:
     if sumcount <k:
         hap += sortednum[0]
+        #가장큰수 합
         sumcount+=1
         count+=1
     else:
         hap += sortednum[1]
+        #두번째로 큰 수
         sumcount = 0
+        #동일 숫자 반복체크를 0으로 초기화
         count+=1
 print(hap)
 
