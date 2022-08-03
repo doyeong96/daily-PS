@@ -4,20 +4,20 @@ coins =[500,100,50,10]
 coins =sorted(coins,reverse=True)
 count = 0
 
-# while money != 0:
-#     if money > coins[0]:
-#         count += money//coins[0]
-#         money = money%coins[0]
-#     elif money > coins[1]:
-#         count += money//coins[1]
-#         money = money%coins[1]
-#     elif money > coins[2]:
-#         count += money//coins[2]
-#         money = money%coins[2]
-#     else:
-#         count += money//coins[3]
-#         money = money%coins[3]
-# print(count)
+while money != 0:
+    if money > coins[0]:
+        count += money//coins[0]
+        money = money%coins[0]
+    elif money > coins[1]:
+        count += money//coins[1]
+        money = money%coins[1]
+    elif money > coins[2]:
+        count += money//coins[2]
+        money = money%coins[2]
+    else:
+        count += money//coins[3]
+        money = money%coins[3]
+print(count)
 
 
 '''

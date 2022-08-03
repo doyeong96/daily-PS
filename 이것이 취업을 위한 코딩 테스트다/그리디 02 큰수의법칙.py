@@ -13,7 +13,7 @@ count = 0
 sortednum = sorted(numlist,reverse=True)
 
 while count != m:
-    if sumcount <k:
+    if sumcount < k:
         hap += sortednum[0]
         #가장큰수 합
         sumcount+=1
