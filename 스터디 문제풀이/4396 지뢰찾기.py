@@ -19,15 +19,15 @@ for r in range(n):
                         boom += 1
                 dap[r][c] = boom
 
-        elif mine[r][c] == '*' and board[r][c] == 'x': # 지뢰를 밟았을 때
-            if mine[r][c] == dap[r][c]:
-                dap[r][c] = '*'
-
+        elif mine[r][c] == '*' and board[r][c] == 'x': # 폭탄을 건드린 상태
+            for i in range(n):
+                for j in range(n):
+                    if mine[i][j] == '*': # 지뢰가 있는 모든 위치에 *표시 해줘야함
+                        dap[i][j] = '*'
 for j in range(n):
     for k in range(n):
         print(dap[j][k], end='')
     print()
-
 '''
 지뢰 밟음
 8
