@@ -1,3 +1,5 @@
+import sys; sys.stdin=open('퍼펙트 셔플.txt')
+
 for test in range(int(input())):
     s = 0
     e = int(input())
