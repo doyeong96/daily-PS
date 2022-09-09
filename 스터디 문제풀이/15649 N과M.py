@@ -13,7 +13,7 @@ def BT():
         print(*makenum)
         return
     # 만든 조합의 길이가 m 이 아닐때
-    else:
+    else:                               # makenum = [ ]
         for num in nums:                # nums를 하나하나 쪼갠다 ex [1,2,3,4] => 1, 2, 3, 4
             if num in makenum:          # 리스트에 있는 숫자랑 현재 num 이랑 같으면 무시
                 continue
