@@ -12,7 +12,6 @@
 중복 안되게 모든 조합을 만든다.
 '''
 import sys;
-
 sys.stdin = open('sample_input')
 
 
@@ -40,6 +39,18 @@ def BT(idx):
                 V -= 1
             else:
                 C -= 1
+
+l, c = map(int, input().split())
+chars = sorted(list(map(str, input().split())))
+# 모음들
+VS = ['a', 'e', 'i', 'o', 'u']
+# visted = [0] * c
+# 모음 자음 갯수
+V = C = 0
+dap = []
+# idx = 0
+BT(0)
+# BT()
 
             # if visted[idx] == 0:
             #     char = chars[idx]
@@ -79,14 +90,3 @@ def BT(idx):
         #     dap.pop()
 
 
-l, c = map(int, input().split())
-chars = sorted(list(map(str, input().split())))
-# 모음들
-VS = ['a', 'e', 'i', 'o', 'u']
-visted = [0] * c
-# 모음 자음 갯수
-V = C = 0
-dap = []
-# idx = 0
-BT(0)
-# BT()
