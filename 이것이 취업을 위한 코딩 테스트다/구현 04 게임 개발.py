@@ -34,7 +34,7 @@ while True:
         cnt += 1 # 카운트를 증가시키고
         if cnt == 4: #만약 카운트가 4가 되면
             direction -= 1
-            if zido[nr][nc] == 1:
+            if zido[nr][nc] == 1: # 네 방향 다 바다 혹은 가지 못하는 경우는 종료
                 break
             elif zido[nr][nc] == 0:
                 zido[nr][nc] = '*'
